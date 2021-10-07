@@ -1,0 +1,29 @@
+.myNav {
+  display: flex;
+  margin-right: 10rem;
+  justify-content: right;
+  align-items: center;
+  width: 100%;
+  flex-wrap: wrap;
+}
+
+.myLogo {
+  margin-right: 16rem;
+  width: 10rem;
+}
+
+ul {
+  display: flex;
+}
+
+ul a {
+  display: flex;
+  margin: 0.6rem;
+  letter-spacing: 0.1em;
+  font-size: 14px;
+  color:#ffff;
+  font-style: oblique;
+  font-weight: 400;
+  text-decoration: none;
+
+}
