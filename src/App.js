@@ -1,6 +1,9 @@
 import './App.css';
 import { Navbar } from './components/NavBar/NavBar';
+import { ItemListContainer } from './components/ItemListContainer/ItemListContainer'
 import './components/NavBar/NavBar.css';
+import './components/ItemListContainer/ItemListContainer.css'
+import './components/CartWidget/CartWidget.css'
 
 function App() {
   return (
@@ -8,6 +11,7 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
+      <ItemListContainer />
     </div>
   );
 }
