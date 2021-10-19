@@ -1,8 +1,8 @@
 
-export const ItemListContainer = () => {
+export const ItemListContainer = (props) => {
     return (
         <div>
-        <h1 className='myh1'>App en Construcción..</h1>
+        <h1 className='myh1'>{props.title}</h1>
         </div>
     )
 }

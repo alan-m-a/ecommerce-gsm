@@ -11,7 +11,7 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <ItemListContainer />
+      <ItemListContainer title= "App en construccion"/>
     </div>
   );
 }
