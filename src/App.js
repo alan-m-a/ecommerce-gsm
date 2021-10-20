@@ -4,6 +4,7 @@ import { ItemListContainer } from './components/ItemListContainer/ItemListContai
 import './components/NavBar/NavBar.css';
 import './components/ItemListContainer/ItemListContainer.css'
 import './components/CartWidget/CartWidget.css'
+import { ItemCount } from './components/ItemCount/ItemCount';
 
 function App() {
   return (
@@ -11,7 +12,8 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <ItemListContainer title= "App en construccion"/>
+      <ItemListContainer title= "App en construcción"/>
+      <ItemCount stock={5} initial={0}/>
     </div>
   );
 }
