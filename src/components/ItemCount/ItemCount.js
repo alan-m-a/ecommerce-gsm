@@ -1,4 +1,5 @@
 import { useState } from "react"
+import '../ItemCount/ItemCount.css'
 
 
 export const ItemCount = (props) => {
@@ -24,7 +25,7 @@ export const ItemCount = (props) => {
     return (
         <div>
             <button onClick={add}>+</button>
-            <p>{counter}</p>
+            <p className="counterCss">{counter}</p>
             <button onClick={remove}>-</button>
             <hr></hr>
             <button>Agregar al carrito</button>
