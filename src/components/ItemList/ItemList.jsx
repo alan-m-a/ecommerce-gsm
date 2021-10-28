@@ -1,39 +1,22 @@
-import { useEffect, useState } from "react";
-import Products from "../../Products.json";
-import Item from "../Item/Item";
+import Item from "../Item/Item"
 import Loader from "react-loader-spinner";
+import { Container, Row } from "react-bootstrap"
 
-
-const ItemList = () => {
-  const [productos, setProductos] = useState([]);
-
-  const getData = (data) =>
-    new Promise((resolve, reject) => {
-      setTimeout(() => {
-        if (data) {
-          resolve(data);
-        } else {
-          reject("Error se encontro nada");
-        }
-      }, 2000);
-    });
-
-  useEffect(() => {
-    getData(Products)
-      .then((res) => setProductos(res))
-      .catch((err) => console.log(err));
-  }, []);
-
+const ItemList = (product) => {
   return (
-    <>
-      {productos.length
-        ? productos.map((producto) => (
-          <Item item={producto} key={producto.id}/>
-        ))
-        : <Loader type="ThreeDots" color="#fff" height={80} width={80} />
-      }
-    </>
-  );
-};
 
+    <Container>
+      <Row>
+        {console.log(product)}
+        {product.length
+          ? product.map((item) => (
+            <Item item={item} key={item.id}/>
+          ))
+          : <Loader type="ThreeDots" color="#fff" height={80} width={80} />
+        }
+      </Row>
+    </Container>
+
+  )
+}
 export default ItemList;
