@@ -1,16 +1,15 @@
-import Item from "../Item/Item"
-import Loader from "react-loader-spinner";
 import { Container, Row } from "react-bootstrap"
+import Loader from "react-loader-spinner";
+import Item from "../Item/Item";
 
-const ItemList = (product) => {
+const ItemList = ({product}) => {
+
   return (
-
-    <Container>
+    <Container className='ListContainerClass'>
       <Row>
-        {console.log(product)}
         {product.length
           ? product.map((item) => (
-            <Item item={item} key={item.id}/>
+            <Item item={item} key={item.id} />
           ))
           : <Loader type="ThreeDots" color="#fff" height={80} width={80} />
         }
