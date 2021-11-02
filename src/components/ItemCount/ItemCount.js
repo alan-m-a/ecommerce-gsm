@@ -23,7 +23,7 @@ export const ItemCount = (props) => {
     }
     
     return (
-        <div>
+        <div className="ContainerCount">
             <button onClick={add}>+</button>
             <p className="counterCss">{counter}</p>
             <button onClick={remove}>-</button>

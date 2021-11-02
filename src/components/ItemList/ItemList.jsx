@@ -11,7 +11,7 @@ const ItemList = ({product}) => {
           ? product.map((item) => (
             <Item item={item} key={item.id} />
           ))
-          : <Loader type="ThreeDots" color="#fff" height={80} width={80} />
+          : <Loader type="ThreeDots" color="#1c1c1c" height={80} width={80} className="Loader"/>
         }
       </Row>
     </Container>

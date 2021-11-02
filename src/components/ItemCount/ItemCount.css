@@ -1,3 +1,12 @@
+.ContainerCount{
+    padding-top: 9px;
+    height: 13.5rem;
+}
+.ContainerCount button{
+    margin-bottom: 1rem;
+    background-color: #c1c1c1;
+
+}
 .counterCss {
-    color:#fff;
+    color: black;
 }
