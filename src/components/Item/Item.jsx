@@ -1,7 +1,6 @@
 import "../Item/Item.css"
 import { Card, Col, Button } from "react-bootstrap"
-/*import { ItemCount } from "../ItemCount/ItemCount"*/
-/*<ItemCount stock={5} initial={0} />*/
+
 
 const Item = ({ item }) => {
 
@@ -17,7 +16,6 @@ const Item = ({ item }) => {
                     </Card.Text>
                 </Card.Body>
                 <Button>Detalles</Button>{' '}
-
             </Card>
         </Col>
     )

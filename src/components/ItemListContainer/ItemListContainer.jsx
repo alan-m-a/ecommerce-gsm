@@ -23,6 +23,8 @@ const ItemListContainer = () => {
             .catch((err) => console.log(err));
     }, []);
 
+    
+
     return (
         <>
             <ItemList product={productos} />

@@ -5,7 +5,6 @@ import './components/Item/Item.css'
 import './components/ItemList/ItemList.css'
 import './components/CartWidget/CartWidget.css'
 import { Navbar } from './components/NavBar/NavBar';
-import ItemListContainer from './components/ItemListContainer/ItemListContainer';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 
 
@@ -16,7 +15,6 @@ function App() {
       <header className="App-header">
         <Navbar />
       </header>
-      <ItemListContainer />
       <ItemDetailContainer />
     </div>
   );
