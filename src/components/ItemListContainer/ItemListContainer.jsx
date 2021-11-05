@@ -24,6 +24,8 @@ const ItemListContainer = () => {
             .catch((err) => console.log(err));
     }, []);
 
+    console.log(productos)
+
     
 
     return (

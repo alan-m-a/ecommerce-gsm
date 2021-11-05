@@ -3,7 +3,7 @@
 }
 
 .App-header {
-  background: url("../src/images/images-header-background.jpg");
+  background: url("../src/images_header/images-header-background.jpg");
   background-size: cover;
   min-height: 45vh;
   display: flex;

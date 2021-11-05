@@ -1,5 +1,5 @@
 import React from "react";
-import logoCarritoImg from '../../images/carrito-de-compras.png'
+import logoCarritoImg from '../../images_header/carrito-de-compras.png'
 
 /* Funcion generadora del logo del carrito */
 export const CartWidget = () => {

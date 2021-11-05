@@ -1,12 +1,33 @@
-.ContainerCount{
+.ContainerCount {
+    display: inline-flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: flex-start;
     padding-top: 9px;
-    height: 13.5rem;
+    height: 3rem;
 }
-.ContainerCount button{
-    margin-bottom: 1rem;
-    background-color: #c1c1c1;
+.ContainerCount button {
+    text-align: center;
+    font-size: 12px;
+    align-items: center;
+    height: 1.9rem;
+    border: 0.5px solid #aaaa;
+    width: 30px;
+    height: 30px;
+    padding: 6px 0px;
+    border-radius: 15px;
+    background-color: #fff;
+}
 
+.ContainerCount button:hover {
+    box-shadow: 5px 10px 20px 1px rgba(0, 0, 0, 0.253);
 }
+
 .counterCss {
+    margin: 0 0.5rem;
     color: black;
+}
+
+.btnAgregar {
+    width: 50%;
 }

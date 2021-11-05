@@ -3,11 +3,11 @@ import '../ItemCount/ItemCount.css'
 
 
 export const ItemCount = (props) => {
-    
+
     const [counter, setCounter] = useState(props.initial)
 
     const add = () => {
-        if (counter < props.stock){
+        if (counter < props.stock) {
             setCounter(counter + 1)
         } else {
             alert('Maximo de stock alcanzado')
@@ -21,14 +21,25 @@ export const ItemCount = (props) => {
             alert('Imposible agregar al carrito')
         }
     }
-    
+
     return (
-        <div className="ContainerCount">
-            <button onClick={add}>+</button>
-            <p className="counterCss">{counter}</p>
-            <button onClick={remove}>-</button>
-            <hr></hr>
-            <button>Agregar al carrito</button>
-        </div>
+        <>
+            <div className="ContainerCount">
+                <div>
+                    <button onClick={add} className="btn btn">+</button>
+                </div>
+                <div className="m-1">
+                    <p className="counterCss">{counter}</p>
+                </div>
+                <div>
+                    <button onClick={remove} className="btn">-</button>
+                </div>
+                <hr></hr>
+            </div>
+            <div className="d-flex justify-content-center">
+                <button className="btnAgregar btn btn-primary">Agregar al Carrito</button>
+            </div>
+
+        </>
     )
 }
