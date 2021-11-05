@@ -2,6 +2,7 @@ import { Col, Card } from "react-bootstrap";
 import { ItemCount } from "../ItemCount/ItemCount"
 import '../ItemCount/ItemCount.css'
 
+/*Componente que genera item en detalle*/
 
 const ItemDetail = ({ item }) => {
     return (
@@ -12,8 +13,7 @@ const ItemDetail = ({ item }) => {
                 <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>
-                        Descripcion del Producto
-                        Este producto quita el bloqueo de iCloud  con MEID de iPhone via Software USB en todas las versiones de IOS que presenta el problema de pantalla bloqueada, bloqueo de Activacion o iCloud con MEID. Eliminamos en unas pocas horas el desbloqueo de iCloud con MEID y con señal de una forma 100% segura y sin riesgos.
+                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eum optio rerum labore saepe nulla quidem, facilis amet. Praesentium eaque beatae voluptatibus. Fugiat, consequuntur! Delectus quibusdam aperiam ex vel atque.m
                     </Card.Text>
                     <hr></hr>
                     ${item.price}

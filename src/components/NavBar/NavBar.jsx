@@ -1,20 +1,22 @@
 import React from 'react';
+import { Link } from 'react-router-dom';
 import logo from '../../images/logo.svg';
 import { CartWidget } from '../CartWidget/CartWidget ';
 
 
+/*Componente Navbar renderiza + links de acceso*/ 
+/*CartWidget genera el logo*/
 
 export const Navbar = () => {
     return (
         <nav className='myNav'>
-            <img src={logo} className='myLogo' alt='logo' />
+            <Link to='/'><img src={logo} className='myLogo' alt='logo' /></Link>
             <ul>
-                <a href='index.html'>Home</a>
-                <a href='index.html'>Servicios</a>
-                <a href='index.html'>Contacto</a>
-                <a href='index.html'>Modelos Soportados</a>
-                <a href='index.html'>Registro</a>
-                <a href='index.html'>Login</a>
+                <Link to='servicios'>Servicios</Link>
+                <a href='#.html'>Contacto</a>
+                <a href='#.html'>Modelos Soportados</a>
+                <a href='#.html'>Registro</a>
+                <a href='#.html'>Login</a>
                 <CartWidget />
             </ul>
         </nav>
