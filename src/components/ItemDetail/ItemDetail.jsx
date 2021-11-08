@@ -1,5 +1,5 @@
 import { Col, Card } from "react-bootstrap";
-import { ItemCount } from "../ItemCount/ItemCount"
+import { ItemCount } from "../ItemCount/ItemCount";
 import '../ItemCount/ItemCount.css'
 
 /*Componente que genera item en detalle*/
