@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 
 /*Componente generador del item*/
 
-const Item = ({ item} ) => {
+const Item = ({ item }) => {
 
     return (
 

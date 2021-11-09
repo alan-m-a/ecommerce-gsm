@@ -1,5 +1,5 @@
 import React from 'react';
-import { BrowserRouter, Route, Switch} from 'react-router-dom';
+import { BrowserRouter, Route, Switch } from 'react-router-dom';
 import './App.css';
 import './components/NavBar/NavBar.css';
 import './components/ItemListContainer/ItemListContainer.css'
@@ -12,6 +12,7 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 
 
 
+
 function App() {
   return (
     <BrowserRouter>
@@ -21,6 +22,9 @@ function App() {
         </header>
         <Switch>
           <Route exact path="/">
+            <ItemListContainer />
+          </Route>
+          <Route exact path="/category/:categoryName">
             <ItemListContainer />
           </Route>
           <Route exact path="/servicios/:servicioId">
