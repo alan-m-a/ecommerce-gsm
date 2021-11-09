@@ -1,3 +1,5 @@
+# E-commerce para servicios de telefonia movil, desarrollado en el curso de React en Coderhouse. Inicialmente se realiza la carga del total de los servicios, pero a través de las categorias de la Nav se puenden filtrar las mismas. Ademas cada item puede acceder a un detalle mas completo. Clase a clase se iran sumando mas funcionalidades.
+
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
