@@ -1,3 +1,25 @@
-.myLogoCarrito{
+.myLogoCarrito {
     width: 2.5rem;
+}
+
+.cart-widget_items {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    border-radius: 50%;
+    position: relative;
+    bottom: 45%;
+    right: 1%;
+    z-index: 1;
+    background-color: red;
+}
+
+.cart-widget_items span {
+    display: block;
+    color: #fff;
+    font-size: 10px;
+    font-weight: bold;
+    padding: 1px;
+    text-align: center;
+    margin: 0 auto;
 }

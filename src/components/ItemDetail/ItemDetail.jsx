@@ -1,10 +1,21 @@
+import { useState } from "react";
 import { Col, Card } from "react-bootstrap";
-import { ItemCount } from "../ItemCount/ItemCount";
-import '../ItemCount/ItemCount.css'
+import ItemCount from "../ItemCount/ItemCount";
+import FinishCompra from "../FinishCompra/FinishCompra"
+import '../ItemCount/ItemCount.css';
+import '../CartWidget/CartWidget.css';
 
 /*Componente que genera item en detalle*/
 
 const ItemDetail = ({ item }) => {
+
+    const [cartCantidad, setCartCantidad] = useState(0);
+
+    const saveCantidad = (counter) => {
+        setCartCantidad(counter);
+        console.log(counter)
+    };
+
     return (
 
         <Col xl={4} md={6} sm={12}>
@@ -18,7 +29,7 @@ const ItemDetail = ({ item }) => {
                     <hr></hr>
                     ${item.price}
                 </Card.Body>
-                <ItemCount stock={5} initial={0} />
+                {cartCantidad ? <FinishCompra /> : <ItemCount stock={item.stock} initial={1} onAdd={saveCantidad} />}
             </Card>
         </Col>
     );

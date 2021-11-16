@@ -6,11 +6,10 @@ const ItemList = ({ product }) => {
 
   return (
     <Container className='ListContainerClass'>
-      <Row>
+      <Row className="ItemList">
         {product.length
-          ? product.map((item) => (
-            <Item item={item} key={item.id} />
-          ))
+          ? product.map((item) => <Item item={item} key={item.id} />
+          )
           : <Loader type="ThreeDots" color="#1c1c1c" height={80} width={80} className="Loader" />
         }
       </Row>

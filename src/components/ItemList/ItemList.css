@@ -5,3 +5,8 @@
 .ListContainerClass button {
     margin: 0.3rem;
 }
+.ItemList {
+    display: flex;
+    justify-content: center;
+}
+  

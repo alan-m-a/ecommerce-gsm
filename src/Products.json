@@ -3,7 +3,8 @@
     "name": "iphone icloud fmi off",
     "price": 4500,
     "img":"/images/fmiOff.jpg",
-    "category":"iphone"
+    "category":"iphone",
+    "stock":100
 },
 
 {
@@ -11,7 +12,8 @@
     "name": "iphone bypass meid",
     "price": 8500,
     "img":"/images/bypassMeid.jpg",
-    "category":"iphone"
+    "category":"iphone",
+    "stock":100
 },
 
 {
@@ -19,7 +21,8 @@
     "name": "iphone bypass gsm",
     "price": 7500,
     "img":"/images/bypassGsm.jpg",
-    "category":"iphone"
+    "category":"iphone",
+    "stock":100
 },
 
 {
@@ -27,7 +30,8 @@
     "name": "moto repair",
     "price": 1800,
     "img":"/images/motokeyServer.jpg",
-    "category":"motorola"
+    "category":"motorola",
+    "stock":100
 },
 
 {
@@ -35,7 +39,8 @@
     "name": "moto frp",
     "price": 800,
     "img":"/images/motokeyServer.jpg",
-    "category":"motorola"
+    "category":"motorola",
+    "stock":100
 },
 
 {
@@ -43,6 +48,7 @@
     "name": "xiaomi mi account",
     "price": 8000,
     "img":"/images/xiaomiMiaccount.jpg",
-    "category":"xiaomi"
+    "category":"xiaomi",
+    "stock":100
 }
 ]

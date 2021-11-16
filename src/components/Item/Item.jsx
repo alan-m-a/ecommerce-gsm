@@ -1,7 +1,6 @@
 import "../Item/Item.css"
 import { Card, Col, Button } from "react-bootstrap"
-import { Link } from "react-router-dom";
-
+import { Link } from "react-router-dom"
 
 /*Componente generador del item*/
 
@@ -18,9 +17,10 @@ const Item = ({ item }) => {
                         ${item.price}
                     </Card.Text>
                 </Card.Body>
-                <Link to={`servicios/${item.id}`}><Button>Detalles</Button>{' '}</Link>
+                <Link to={`/servicios/${item.id}`}> <Button>Detalles</Button>{' '} </Link>
             </Card>
         </Col>
+
     )
 }
 export default Item;

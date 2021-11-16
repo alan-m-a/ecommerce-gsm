@@ -6,7 +6,7 @@ import { useParams } from "react-router";
 /* Componente contenedor de productos de inicio*/
 
 const ItemListContainer = () => {
-    const { categoryName } = useParams();
+    const { servicioId } = useParams();
     const [productos, setProductos] = useState([]);
 
     const getData = (data) =>
@@ -23,11 +23,11 @@ const ItemListContainer = () => {
     useEffect(() => {
         getData(Products)
             .then((res) => {
-                categoryName ?
-                    setProductos(res.filter((product) => product.category === categoryName)) : setProductos(Products);
+                servicioId ?
+                    setProductos(res.filter((product) => product.category === servicioId)) : setProductos(Products);
             })
             .catch((err) => console.log(err));
-    }, [categoryName])
+    }, [servicioId])
 
     console.log(productos)
 

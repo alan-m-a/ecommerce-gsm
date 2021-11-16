@@ -2,12 +2,12 @@ import { useState } from "react"
 import '../ItemCount/ItemCount.css'
 
 
-export const ItemCount = (props) => {
-
-    const [counter, setCounter] = useState(props.initial)
+const ItemCount = ({stock, initial, onAdd}) => {
+  
+    const [counter, setCounter] = useState(initial)
 
     const add = () => {
-        if (counter < props.stock) {
+        if (counter < stock) {
             setCounter(counter + 1)
         } else {
             alert('Maximo de stock alcanzado')
@@ -37,9 +37,10 @@ export const ItemCount = (props) => {
                 <hr></hr>
             </div>
             <div className="d-flex justify-content-center">
-                <button className="btnAgregar btn btn-primary">Agregar al Carrito</button>
+                <button className="btnAgregar btn btn-primary" onClick={()=>onAdd(counter)}>Agregar al Carrito</button>
             </div>
 
         </>
     )
 }
+export default ItemCount;
