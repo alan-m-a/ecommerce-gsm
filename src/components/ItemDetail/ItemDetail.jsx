@@ -24,7 +24,7 @@ const ItemDetail = ({ item }) => {
                 <Card.Body>
                     <Card.Title>{item.name}</Card.Title>
                     <Card.Text>
-                        Lorem ipsum dolor sit amet consectetur, adipisicing elit. Sunt eum optio rerum labore saepe nulla quidem, facilis amet. Praesentium eaque beatae voluptatibus. Fugiat, consequuntur! Delectus quibusdam aperiam ex vel atque.m
+                        Lorem ipsums dolor sit amet consectetur, adipisicing elit. Sunt eum optio rerum labore saepe nulla quidem, facilis amet. Praesentium eaque beatae voluptatibus. Fugiat, consequuntur! Delectus quibusdam aperiam ex vel atque.m
                     </Card.Text>
                     <hr></hr>
                     ${item.price}
