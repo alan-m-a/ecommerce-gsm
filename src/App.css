@@ -1,19 +1,16 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  }
+
 .App {
   text-align: center;
 }
 
-.App-header {
-  background: url("../src/images_header/images-header-background.jpg");
-  background-size: cover;
-  min-height: 33vh;
-  display: flex;
-  flex-direction: row;
-  font-size: calc(10px + 2vmin);
-  color: #fff;
-}
-
 body {
-  background-color: #f4f4f4;
+  background-color: #fafafa;
+  padding-top: 96px;
 }
 
 .Loader {

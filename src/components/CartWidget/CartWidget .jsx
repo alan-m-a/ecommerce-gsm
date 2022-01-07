@@ -8,7 +8,7 @@ export const CartWidget = () => {
     return (
         <div className='containerCarrito'>
             <img src={logoCarritoImg} className='myLogoCarrito' alt='Logo de carrito de compras' />
-            <div className="cart-widget_items"><span>1</span></div>
+            <div className="cart-widget_items"><span>0</span></div>
         </div>
     )
 }

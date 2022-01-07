@@ -17,7 +17,7 @@ const ItemListContainer = () => {
                 } else {
                     reject("Error se encontro nada");
                 }
-            }, 2000);
+            }, 1000);
         });
 
     useEffect(() => {
