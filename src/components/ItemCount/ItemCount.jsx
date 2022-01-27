@@ -15,10 +15,10 @@ const ItemCount = ({stock, initial, onAdd}) => {
     }
 
     const remove = () => {
-        if (counter > 0) {
+        if (counter > 1) {
             setCounter(counter - 1)
         } else {
-            alert('Imposible agregar al carrito')
+            alert('Sin Stock')
         }
     }
 

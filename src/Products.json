@@ -4,7 +4,7 @@
     "price": 4500,
     "img":"/images/fmiOff.jpg",
     "category":"iphone",
-    "stock":100
+    "stock":10
 },
 
 {
@@ -13,7 +13,7 @@
     "price": 8500,
     "img":"/images/bypassMeid.jpg",
     "category":"iphone",
-    "stock":100
+    "stock":10
 },
 
 {
@@ -22,7 +22,7 @@
     "price": 7500,
     "img":"/images/bypassGsm.jpg",
     "category":"iphone",
-    "stock":100
+    "stock":10
 },
 
 {
@@ -31,7 +31,7 @@
     "price": 1800,
     "img":"/images/motokeyServer.jpg",
     "category":"motorola",
-    "stock":100
+    "stock":10
 },
 
 {
@@ -40,7 +40,7 @@
     "price": 800,
     "img":"/images/motokeyServer.jpg",
     "category":"motorola",
-    "stock":100
+    "stock":10
 },
 
 {
@@ -49,6 +49,6 @@
     "price": 8000,
     "img":"/images/xiaomiMiaccount.jpg",
     "category":"xiaomi",
-    "stock":100
+    "stock":10
 }
 ]
