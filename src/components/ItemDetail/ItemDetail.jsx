@@ -13,7 +13,7 @@ const ItemDetail = ({ item }) => {
 
     const saveCantidad = (counter) => {
         setCartCantidad(counter);
-        console.log(counter)
+        console.log(`Se selecciono ${counter} item/s`);
     };
 
     return (
