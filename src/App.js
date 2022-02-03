@@ -9,6 +9,7 @@ import './components/CartWidget/CartWidget.css';
 import { NavBar } from './components/NavBar/NavBar';
 import ItemDetailContainer from './components/ItemDetailContainer/ItemDetailContainer';
 import ItemListContainer from './components/ItemListContainer/ItemListContainer';
+import CartContextProvider from './context/CartContext';
 
 
 
@@ -16,20 +17,22 @@ import ItemListContainer from './components/ItemListContainer/ItemListContainer'
 function App() {
   return (
     <BrowserRouter>
-      <div className="App">
-        <NavBar />
-        <Switch>
-          <Route exact path="/">
-            <ItemListContainer />
-          </Route>
-          <Route path="/category/:servicioId">
-            <ItemListContainer />
-          </Route>
-          <Route path="/servicios/:servicioId">
-            <ItemDetailContainer />
-          </Route>
-        </Switch>
-      </div>
+      <CartContextProvider>
+        <div className="App">
+          <NavBar />
+          <Switch>
+            <Route exact path="/">
+              <ItemListContainer />
+            </Route>
+            <Route path="/category/:servicioId">
+              <ItemListContainer />
+            </Route>
+            <Route path="/servicios/:servicioId">
+              <ItemDetailContainer />
+            </Route>
+          </Switch>
+        </div>
+      </CartContextProvider>
     </BrowserRouter>
   );
 
